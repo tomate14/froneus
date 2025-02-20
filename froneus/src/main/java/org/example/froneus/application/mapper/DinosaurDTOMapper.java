@@ -7,6 +7,7 @@ public class DinosaurDTOMapper {
 
     public static DinosaurDTO toDto(Dinosaur request) {
         DinosaurDTO dinosaur = new DinosaurDTO();
+        dinosaur.setId(request.getId());
         dinosaur.setName(request.getName());
         dinosaur.setSpecies(request.getSpecies());
         dinosaur.setDiscoveryDate(request.getDiscoveryDate());

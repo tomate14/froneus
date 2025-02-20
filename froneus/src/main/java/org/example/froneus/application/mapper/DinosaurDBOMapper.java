@@ -7,6 +7,7 @@ public class DinosaurDBOMapper {
 
     public static Dinosaur toDomain(DinosaurEntity request) {
         Dinosaur dinosaur = new Dinosaur();
+        dinosaur.setId(request.getId());
         dinosaur.setName(request.getName());
         dinosaur.setSpecies(request.getSpecies());
         dinosaur.setDiscoveryDate(request.getDiscoveryDate());

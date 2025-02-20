@@ -5,6 +5,7 @@ import org.example.froneus.domain.model.DinosaurStatus;
 import java.time.LocalDateTime;
 
 public class DinosaurDTO {
+    private Long id;
     private String name;
     private String species;
     private LocalDateTime discoveryDate;
@@ -12,6 +13,14 @@ public class DinosaurDTO {
     private DinosaurStatus status;
 
     public DinosaurDTO() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

@@ -18,6 +18,9 @@ public class DinosaurDBOMapper {
 
     public static DinosaurEntity toDbo(Dinosaur request) {
         DinosaurEntity dinosaur = new DinosaurEntity();
+        if (request.getId() != null) {
+            dinosaur.setId(request.getId());
+        }
         dinosaur.setName(request.getName());
         dinosaur.setSpecies(request.getSpecies());
         dinosaur.setDiscoveryDate(request.getDiscoveryDate());

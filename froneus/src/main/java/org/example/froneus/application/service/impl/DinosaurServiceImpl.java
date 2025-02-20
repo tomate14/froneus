@@ -21,7 +21,6 @@ public class DinosaurServiceImpl implements DinosaurService {
     private DinosaurRepositoryPort dinosaurRepositoryPort;
 
 
-
     public DinosaurDTO createDinosaur(DinosaurRequest dinosaur) {
         if (dinosaurRepositoryPort.findByName(dinosaur.getName()).isPresent()) {
             throw new IllegalArgumentException("Name is not unique.");

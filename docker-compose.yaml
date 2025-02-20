@@ -15,6 +15,15 @@ services:
       - C:\froneus\mysql:/var/lib/mysql
     networks:
       - mynet
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_container
+    ports:
+      - "5672:5672"    # puerto AMQP
+      - "15672:15672"  # puerto de la consola de administración
+    networks:
+      - mynet
 
   froneus-java:
     build:
@@ -25,6 +34,7 @@ services:
       - "8080:8080"
     depends_on:
       - froneus-mysql
+      - rabbitmq
     networks:
       - mynet  
 

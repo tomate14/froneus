@@ -18,7 +18,7 @@ public class DinosaurStatusScheduler {
     @Autowired
     private DinosaurMessagePublisherPort messagePublisher;
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 600000)
     public void updateDinosaurStatuses() {
         List<Dinosaur> dinosaurs = dinosaurRepository.findAll();
         LocalDateTime now = LocalDateTime.now();

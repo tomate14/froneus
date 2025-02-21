@@ -75,12 +75,4 @@ public class DinosaurServiceImpl implements DinosaurService {
         dinosaurRepositoryPort.deleteById(id);
     }
 
-    private void checkDinosaurAbleByNameAndDates(DinosaurRequest updatedData) {
-        if (updatedData.getDiscoveryDate().isAfter(updatedData.getExtinctionDate())) {
-            throw new IllegalArgumentException("Discovery Date should be less than Extinction Date.");
-        }
-        if (dinosaurRepositoryPort.findByName(updatedData.getName()).isPresent()) {
-            throw new IllegalArgumentException("Name is not unique.");
-        }
-    }
 }

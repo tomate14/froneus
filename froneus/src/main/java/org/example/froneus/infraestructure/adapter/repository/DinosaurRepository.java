@@ -1,4 +1,4 @@
-package org.example.froneus.infraestructure.adapter;
+package org.example.froneus.infraestructure.adapter.repository;
 
 import org.example.froneus.infraestructure.adapter.entity.DinosaurEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

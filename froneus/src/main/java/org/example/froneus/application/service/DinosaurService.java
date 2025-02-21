@@ -1,6 +1,5 @@
 package org.example.froneus.application.service;
 
-import org.example.froneus.domain.model.Dinosaur;
 import org.example.froneus.domain.model.dto.DinosaurDTO;
 import org.example.froneus.domain.model.request.DinosaurRequest;
 

@@ -5,7 +5,7 @@ import org.example.froneus.application.mapper.DinosaurDBOMapper;
 import org.example.froneus.domain.model.Dinosaur;
 import org.example.froneus.domain.port.DinosaurRepositoryPort;
 import org.example.froneus.infraestructure.adapter.entity.DinosaurEntity;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.example.froneus.infraestructure.adapter.repository.DinosaurRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
